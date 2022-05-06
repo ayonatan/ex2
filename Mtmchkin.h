@@ -1,9 +1,6 @@
-//
-// Created by Daniel_Meents on 07/04/2022.
-//
+#ifndef MTM_HW2_MTMCHKIN_H
+#define MTM_HW2_MTMCHKIN_H
 
-#ifndef EX2_GAME_H
-#define EX2_GAME_H
 #include "Card.h"
 #include <iostream>
 
@@ -60,9 +57,12 @@ public:
     //TODO: complete the Mtmchkin class.
 
 private:
+    std::string m_player_name;
+    Card* m_cards_array
+    int m_num_of_cards
     //TODO: complete the Mtmchkin class.
 
 };
 
 
-#endif //EX2_GAME_H
+#endif //MTM_HW2_MTMCHKIN_H

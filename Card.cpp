@@ -8,13 +8,13 @@ Card::Card(CardType type, const CardStats& stats):
 void Card::printInfo() const
 {
     switch (m_effect) {
-        case Buff:
+        case CardType::Buff:
             printBuffCardInfo(m_stats);
-        case Heal :
+        case CardType::Heal :
             printHealCardInfo(m_stats);
-        case Treasure:
+        case CardType::Treasure:
             printTreasureCardInfo(m_stats);
-        case Battle:
+        case CardType::Battle:
             printBattleCardInfo(m_stats);
     }
 }

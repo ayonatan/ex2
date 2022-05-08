@@ -5,7 +5,7 @@
 #include "utilities.h"
 #include <string>
 
-typedef enum level { // enum or enum class ??
+typedef enum level {
     ONE, TWO, THREE, FOR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN
 };
 
@@ -26,11 +26,11 @@ public:
 
     Player &operator=(const Player &player) = default;
 
-    void printInfo();
+    void printInfo() const;
 
     void levelUp();
 
-    int getLevel();
+    int getLevel() const;
 
     void buff(int pointsToAdd);
 
@@ -38,13 +38,13 @@ public:
 
     void damage(int damagePoints);
 
-    bool isKnockedOut();
+    bool isKnockedOut() const;
 
     void addCoins(int coinsToAdd);
 
     bool pay(int coinsToPay);
 
-    int getAttackStrength();
+    int getAttackStrength() const;
 };
 
 #endif //MTM_HW2_PLAYER_H

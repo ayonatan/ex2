@@ -38,7 +38,7 @@ public:
      * @return
      *      void
     */
-    void applyEncounter(Player& player) const;
+    void applyEncounter(Player& player);
 
 
     /*

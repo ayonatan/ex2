@@ -19,15 +19,20 @@ void Card::printInfo() const
     }
 }
 
-void Card::applyEncounter(Player& player)
+void Card::applyEncounter(Player& player)const
 {
-    switch (m_effect) {
+    switch (m_effect) 
+    {
         case CardType::Buff:
             if(player.pay(m_stats.cost))
+            {
                 player.buff(m_stats.buff);
+            }
         case CardType::Heal:
             if(player.pay(m_stats.cost))
-                player.heal(m_stats.heal);
+            {
+               player.heal(m_stats.heal);
+            }
         case CardType::Treasure:
             player.addCoins(m_stats.loot);
         case CardType::Battle:

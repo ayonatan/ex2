@@ -53,13 +53,12 @@ public:
      */
     GameStatus getGameStatus() const;
 
-    //TODO: complete the Mtmchkin class.
-
 private:
-    //TODO: complete the Mtmchkin class.
-    std::string m_player_name;
+    Player m_player;
     Card* m_cards_array;
     int m_num_of_cards;
+    GameStatus m_game_status;
+    int m_round;
 };
 
 

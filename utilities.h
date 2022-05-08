@@ -1,11 +1,5 @@
-//
-// Created by Daniel_Meents on 12/04/2022.
-//
-
-#ifndef EX2_UTILITIES_H
-#define EX2_UTILITIES_H
-
-
+#ifndef MTM_HW2_UTILITIES_H
+#define MTM_HW2_UTILITIES_H
 
 
 /*
@@ -33,7 +27,8 @@ struct CardStats{
      * @return
      *      New instance of CardStats.
     */
-    explicit CardStats(int force = 0, int hpLoss = 0, int cost = 0, int heal = 0, int buff = 0, int loot = 0) {
+    explicit CardStats(int force = 0, int hpLoss = 0, int cost = 0, int heal = 0, int buff = 0, int loot = 0)
+    {
         this->force = force;
         this->hpLossOnDefeat = hpLoss;
         this->cost = cost;
@@ -107,6 +102,4 @@ void printTreasureCardInfo(const CardStats& card);
  */
 void printPlayerInfo(const char* name, int level, int force, int hp, int coins);
 
-
-
-#endif //EX2_UTILITIES_H
+#endif //MTM_HW2_UTILITIES_H

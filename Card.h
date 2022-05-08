@@ -1,3 +1,5 @@
+#ifndef MTM_HW2_CARD_H
+#define MTM_HW2_CARD_H
 //
 // Created by Daniel_Meents on 07/04/2022.
 //
@@ -38,7 +40,7 @@ public:
      * @return
      *      void
     */
-    void applyEncounter(Player& player);
+    void applyEncounter(Player& player) const;
 
 
     /*
@@ -70,5 +72,5 @@ private:
 
 };
 
+#endif //MTM_HW2_CARD_H
 
-#endif //EX2_Card_H

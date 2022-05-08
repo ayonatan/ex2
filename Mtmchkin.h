@@ -1,6 +1,5 @@
 #ifndef MTM_HW2_MTMCHKIN_H
 #define MTM_HW2_MTMCHKIN_H
-
 #include "Card.h"
 #include <iostream>
 
@@ -43,7 +42,7 @@ public:
      *          True if the game ended
      *          False otherwise
      */
-    bool isOver();
+    bool isOver() const;
 
 
     /*
@@ -57,12 +56,11 @@ public:
     //TODO: complete the Mtmchkin class.
 
 private:
-    std::string m_player_name;
-    Card* m_cards_array
-    int m_num_of_cards
     //TODO: complete the Mtmchkin class.
-
+    std::string m_player_name;
+    Card* m_cards_array;
+    int m_num_of_cards;
 };
 
 
-#endif //MTM_HW2_MTMCHKIN_H
+#endif //EX2_GAME_H

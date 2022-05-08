@@ -74,8 +74,7 @@ void Player::heal(int pointsToHeal) {
 }
 
 void Player::damage(int damagePoints) {
-    if (m_HP - damagePoints > 0) 
-    {
+    if (m_HP - damagePoints > 0) {
         m_HP -= damagePoints;
     } else {
         m_HP = 0;

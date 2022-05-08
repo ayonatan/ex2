@@ -5,7 +5,7 @@
 #include "utilities.h"
 #include <string>
 
-typedef enum level {
+typedef enum level { // enum or enum class ??
     ONE, TWO, THREE, FOR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN
 };
 

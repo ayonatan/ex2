@@ -13,7 +13,7 @@ class Player {
     int m_force;
     int m_maxHP;
     int m_HP;
-    unsigned int m_coins;
+    int m_coins;
 
 public:
     Player(const char* m_name, int m_maxHP = 100, int force = 5);

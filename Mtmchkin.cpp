@@ -32,6 +32,10 @@ Mtmchkin::Mtmchkin(const Mtmchkin &game):
 
 Mtmchkin& Mtmchkin::operator=(const Mtmchkin &game)
 {
+    if (this == &game)
+    {
+        return *this;
+    }
     m_player = game.m_player;
     delete[] m_cards_array;
     m_cards_array = new Card[game.m_num_of_cards];
@@ -47,6 +51,10 @@ Mtmchkin& Mtmchkin::operator=(const Mtmchkin &game)
 
 void Mtmchkin::playNextCard()
 {
+    if (m_game_status != GameStatus::MidGame)
+    {
+        return;
+    }
     m_cards_array[m_round].printInfo();
     m_cards_array[m_round].applyEncounter(m_player);
     m_player.printInfo();

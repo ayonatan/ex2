@@ -5,7 +5,7 @@ Player::Player(const char* name, int maxHP, int force) :
         m_level(1),
         m_coins(0)
 {
-    if (m_force <= 0)
+    if (force <= 0)
     {
         m_force = DEFAULT_FORCE;
     } 

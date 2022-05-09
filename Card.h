@@ -3,12 +3,10 @@
 //
 // Created by Daniel_Meents on 07/04/2022.
 //
-#ifndef EX2_Card_H
-#define EX2_Card_H
 
-#include <string>
 #include "Player.h"
 #include "utilities.h"
+#include<string>
 
 /*
  *  CardType:

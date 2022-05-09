@@ -1,24 +1,22 @@
 
 #ifndef MTM_HW2_PLAYER_H
 #define MTM_HW2_PLAYER_H
-
+#include<string>
 #include "utilities.h"
-#include <string>
 
-typedef enum level {
-    ONE, TWO, THREE, FOR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN
-};
+const int DEFAULT_FORCE = 5;
+const int DEFAULT_MAX_HP = 100;
 
 class Player {
     std::string m_name;
-    level m_level;
+    int m_level;
     int m_force;
     int m_maxHP;
     int m_HP;
     unsigned int m_coins;
 
 public:
-    Player(std::string m_name, int m_maxHP = 100, int force = 5);
+    Player(const char* m_name, int m_maxHP = 100, int force = 5);
 
     Player(const Player &player) = default;
 

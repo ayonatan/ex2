@@ -1,7 +1,9 @@
 #ifndef MTM_HW2_MTMCHKIN_H
 #define MTM_HW2_MTMCHKIN_H
 #include "Card.h"
+#include "Player.h"
 #include <iostream>
+#include<string>
 
 /*
  * GameStatus:
@@ -52,6 +54,12 @@ public:
      *          GameStatus - the current status of the running game
      */
     GameStatus getGameStatus() const;
+
+    Mtmchkin(const Mtmchkin &game);
+
+    ~Mtmchkin();
+
+    Mtmchkin &operator=(const Mtmchkin &game);
 
 private:
     Player m_player;
